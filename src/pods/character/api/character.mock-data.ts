@@ -3,7 +3,7 @@ import { Lookup } from 'common/models';
 
 export const mockCharacterCollection: Character[] = [
   {
-    "id": 1,
+    "id": "1",
     "name": "Rick Sanchez",
     "status": "Alive",
     "species": "Human",
@@ -75,7 +75,7 @@ export const mockCharacterCollection: Character[] = [
     "created": "2017-11-04T18:48:46.250Z"
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Morty Smith",
     "status": "Alive",
     "species": "Human",
