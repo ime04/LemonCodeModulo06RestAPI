@@ -5,9 +5,9 @@ import { mockCharacterCollection } from './character-collection.mock-data';
 let characterCollection = [...mockCharacterCollection];
 
 export const getCharacterCollection = async (): Promise<CharacterEntityApi[]> => {
-  return axios.get('/api/characters')
+  return axios.get('https://rickandmortyapi.com/api/character')
   .then(function (response) {
-    return response.data;
+    return response.data.results;
   })
   .catch(function (error) {
     console.log(error);

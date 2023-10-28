@@ -2,7 +2,7 @@ import { Character } from './character.api-model';
 import axios from 'axios';
 
 export const getCharacter = async (id: string): Promise<Character> => {
-  return axios.get(`api/characters/${id}`)
+  return axios.get(`https://rickandmortyapi.com/api/character/${id}`)
     .then(function (response) {
       return response.data;
     })
