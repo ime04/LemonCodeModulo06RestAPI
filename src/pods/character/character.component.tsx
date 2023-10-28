@@ -5,6 +5,7 @@ import { TextFieldComponent } from 'common/components';
 import { formValidation } from './character.validations';
 import { Character } from './character.vm';
 import * as classes from './character.styles';
+import { Avatar } from '@mui/material';
 
 interface Props {
   character: Character;
@@ -23,6 +24,7 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
     >
       {() => (
         <Form className={classes.root}>
+          <Avatar aria-label="Character" src={character.image} />
           <TextFieldComponent name="name" label="Name" />
           <TextFieldComponent name="origin" label="Origin" />
           <TextFieldComponent name="gender" label="Gender" />

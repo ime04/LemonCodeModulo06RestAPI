@@ -22,7 +22,7 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   return (
     <Card>
       <CardHeader
-        avatar={<Avatar aria-label="Character">{character.image}</Avatar>}
+        avatar={<Avatar aria-label="Character" src={character.image} />}
         title={character.name}
         subheader={character.name}
       />
